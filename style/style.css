@@ -94,7 +94,7 @@ img {
   color: black;
 }
 
-.card > a > img {
+.card > a > div{
   border: 1px solid gray;
   border-radius: 5px;
   height: 300px;
@@ -187,56 +187,35 @@ img {
   }
 
   .card > a > div {
-    border: 1px solid gray;
+    border: 1px solid black;
     border-radius: 5px;
     width: 40vw;
     height: 30vh;
     z-index: 2;
-    background-color: black;
     object-fit: cover;
     object-position: 0 0;
   }
 }
 
-.p-1:hover {
-  background-image: url("/img/1.png") !important;
+.cover {
+  background-color: black ;
+  height: 30vh;
+  width: 40vw;
+  z-index: 2;
+  position: relative;
+  top: 0;
+  transition: opacity 1s;
 }
-.p-2:hover {
-  background-image: url("/img/2.png");
+
+.cover:hover {
+  opacity: 0;
 }
-.p-3:hover {
-  background-image: url("/img/3.png");
+
+.text {
+  position: relative;
+  top: -29vh;
 }
-.p-4:hover {
-  background-image: url("/img/4.png");
-}
-.p-5:hover {
-  background-image: url("/img/5.png");
-}
-.p-6:hover {
-  background-image: url("/img/6.png");
-}
-.p-7:hover {
-  background-image: url("/img/7.png");
-}
-.p-8:hover {
-  background-image: url("/img/8.png");
-}
-.p-9:hover {
-  background-image: url("/img/9.png");
-}
-.p-10:hover {
-  background-image: url("/img/10.png");
-}
-.p-11:hover {
-  background-image: url("/img/11.png");
-}
-.p-12:hover {
-  background-image: url("/img/12.png");
-}
-.p-13:hover {
-  background-image: url("/img/13.png");
-}
+
 
 #modal {
   position: absolute;
@@ -277,4 +256,13 @@ img {
 #close {
   width: 25px;
   z-index: 4;
+}
+
+
+.image {
+  position: relative;
+  height: 30vh !important;
+  width: 40vw !important;
+  object-fit: cover;
+  top: -30vh
 }
